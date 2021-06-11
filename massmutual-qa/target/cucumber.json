@@ -1,0 +1,90 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-11T13:31:04.556Z",
+        "line": 4,
+        "name": "Verifications of Values and Balance from UI Page",
+        "description": "",
+        "id": "count-of-values-and-total-balance;verifications-of-values-and-balance-from-ui-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to the url \"https://www.google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.google.com",
+                  "offset": 23
+                }
+              ],
+              "location": "test.mm.stepdefs.GivenThenStatements.driverInitAndNav(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I verify whether right count of values appear on the page",
+            "match": {
+              "location": "test.mm.stepdefs.GivenThenStatements.verifyRightCountOfValuesFromUI()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I verify values from the page are greaterthan zero",
+            "match": {
+              "location": "test.mm.stepdefs.GivenThenStatements.valuesFromUIGreaterThanZero()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I verify if the values are formatted as currencies",
+            "match": {
+              "location": "test.mm.stepdefs.GivenThenStatements.valuesFromUIFormattedAsCurrencies()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify if the total balance is equal to sum of all the values",
+            "match": {
+              "location": "test.mm.stepdefs.GivenThenStatements.verifyTotalBalanceIsSumOfValues()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Count of Values and Total Balance",
+    "description": "  For verifying the values count, currency and total balance",
+    "id": "count-of-values-and-total-balance",
+    "keyword": "Feature",
+    "uri": "file:features/valuesbalance.feature",
+    "tags": []
+  }
+]
